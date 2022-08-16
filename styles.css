@@ -290,9 +290,6 @@ h4{
 }
 
 
-    
-
-
 .nav{
     display: flex;
     justify-content: space-around;
@@ -301,7 +298,7 @@ h4{
     padding-left: 10px;
  
 }
-
+    
 .nav-link{
     
     text-decoration: none;
@@ -313,5 +310,16 @@ h4{
     justify-content: space-around;
     margin: 50px auto;
     width: 50%
+    
+}
+
+/**********************      Desktop view       *************************/
+
+@media (min-width: 1440px){
+
+    
+    
+    
+    
     
 }
