@@ -9,18 +9,19 @@
 
 /* Remove default margin and padding */
 body,
-/* h1,
+h1,
 h2,
 h3,
 h4,
 h5,
 figure,
 blockquote,
-dl, */
+dl,
 dd {
   margin: 0;
   padding: 0;
 }
+
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed
 ul[role='list'],
@@ -96,13 +97,9 @@ select {
 
 
 /**********************      Style       *************************/
-
-body {
+ body {
     min-width: 375px;
-  
-    margin: 0 auto;
-    /* width: 375px; */   
-}
+ }
 
 .img-desktop{
     display: none;
@@ -280,6 +277,7 @@ h4{
 .client_name{
     font-weight: 900;
 }
+
  .client_img{
     margin: 0 auto;
     border-radius: 50px;
@@ -322,6 +320,11 @@ h4{
 
 @media (min-width: 482px){
 
+
+    body{
+        min-width: 1440px;
+        margin: 0 auto;
+    }
 /*----------------Header----------------*/
     .header{
         position: relative;
@@ -372,22 +375,19 @@ h4{
        align-items: center;
        padding: 20px;
        border-radius: 20px;
-       background-color: var(--White);
+       background-color: var(--Yellow);
        font-weight: 600;
        color: black;
     }
 
     .pst-abs{
-        
+       
     }
 
     .title{
         letter-spacing: 0.5em;
         font-size: 4.5em;
-    }
-
-    .arrow{
-        width: 1%;  
+        text-align: center;
     }
 
     h2{
@@ -399,7 +399,8 @@ h4{
     p{
         font-size: 1.5em;
         color: var(--Very-dark-grayish-blue);
-        font-weight: 700;}
+        font-weight: 700;
+    }
 
     
     h3{
@@ -409,6 +410,7 @@ h4{
         display:flex;
         flex-direction: row-reverse;
     }
+
     .img-trans{
         width: 50%;
     }
@@ -429,29 +431,32 @@ h4{
         text-align: left;
     }
 
-    .cont{
-        width: 50%;
+   
+
+    .two{
+        display:flex;
     }
 
     .sec{
         display: flex;
     }
 
-    .two,
-    .three{
-        display:flex;
-    }
-
-
     .three,
     .four{
-        /* width: 50%; */
+        width: 100%;
     }
+
     .graphics,
     .photography{
         
     }
-
+    .cont{
+        width: 60%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .aside{
         margin: 100px auto;
     }
@@ -466,8 +471,6 @@ h4{
 
     .flex{
         display:flex;
-       
-        
      }
     
      .item{
@@ -475,8 +478,7 @@ h4{
      }
 
      .footer-container{
-        padding: 200px 0;
-        margin: 0 auto;
+        padding: 100px 0;
     }
 
      .fot{
@@ -484,7 +486,6 @@ h4{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
      }
 
      .nav{
