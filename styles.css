@@ -5,6 +5,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  border: 0;
 }
 
 /* Remove default margin and padding */
@@ -20,6 +21,7 @@ dl,
 dd {
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 
@@ -323,7 +325,6 @@ h4{
 
     body{
         min-width: 1440px;
-        margin: 0 auto;
     }
 /*----------------Header----------------*/
     .header{
