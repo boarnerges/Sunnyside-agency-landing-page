@@ -8,7 +8,7 @@
 }
 
 /* Remove default margin and padding */
-body
+body,
 /* h1,
 h2,
 h3,
@@ -101,8 +101,11 @@ body {
     min-width: 375px;
   
     margin: 0 auto;
-    width: 375px;
-    
+    /* width: 375px; */   
+}
+
+.img-desktop{
+    display: none;
 }
 
 
@@ -134,19 +137,12 @@ body {
     background-color: var(--White);
     width: 85%;
     padding-right: 30px;
-    padding-top: 30px;
     text-align: center;
-    height: 327px;
     display:none;
-   
-    
 }
 
 .main-nav {
-    list-style-type: none;
-    margin: 20px;
-    
-   
+        list-style-type: none;
 }
 
 .nav-links {    
@@ -172,7 +168,7 @@ body {
     padding: 20px;
     border-radius: 50px;
     background-color: var(--Yellow);
-    font-weight: 6 00;
+    font-weight: 600;
 }
 
 
@@ -183,7 +179,6 @@ body {
     justify-content: center;
     position: absolute;
     top: 130px;
-    
 } 
 
 .title { 
@@ -194,15 +189,11 @@ body {
    
 }
 img.arrow{
-    width: 10%;
-    
-    
+    width: 10%;  
 }
 
 .active {
     display: block;
-    
-
   }
 
 .none{
@@ -224,17 +215,6 @@ p{
     font-weight: 700;
 }
 
-.client{
-    letter-spacing: 6px;
-    font-weight: 900;
-    text-align: center;
-    color: var(--Grayish-blue );
-
-}
-
-.client_name{
-    font-weight: 900;
-}
 
 h4{
     color: var(--Grayish-blue);
@@ -246,6 +226,13 @@ h4{
     padding: 50px 0;
 
  }
+ .transform,
+ .stand-out
+ {
+     width: 80%;
+     margin: 100px auto;
+     text-align: center
+ }
 
  .three,
  .four{
@@ -255,8 +242,12 @@ h4{
  .graphics, 
  .photography {
     position: absolute;
-    bottom: 10px;
-    left: 15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 30px;
+    text-align: center;
  }
 
  .photography {
@@ -277,6 +268,18 @@ h4{
     width: 50%;
  }
 
+ 
+.client{
+    letter-spacing: 6px;
+    font-weight: 900;
+    text-align: center;
+    color: var(--Grayish-blue );
+
+}
+
+.client_name{
+    font-weight: 900;
+}
  .client_img{
     margin: 0 auto;
     border-radius: 50px;
@@ -290,7 +293,6 @@ h4{
 
 .footer-container{
     padding: 50px 0;
-
     background: rgb(100, 200, 150);
 }
 
@@ -298,14 +300,12 @@ h4{
 .nav{
     display: flex;
     justify-content: space-around;
-   
     list-style-type: none;
     padding-left: 10px;
  
 }
     
 .nav-link{
-    
     text-decoration: none;
     color: var(--white); 
 }
@@ -320,11 +320,182 @@ h4{
 
 /**********************      Desktop view       *************************/
 
-@media (min-width: 1440px){
+@media (min-width: 482px){
+
+/*----------------Header----------------*/
+    .header{
+        position: relative;
+    }
+
+    .img-mobile{
+        display: none;
+    }
+    .img-desktop{
+        display: block;
+        width: 100%;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .navbar{
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-end;
+        background: none;
+        position: absolute;
+        top: 20px;
+        margin-right: 3em;
+    }
+
+    .main-nav {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-links {    
+        text-decoration: none;
+        line-height: 4;
+        color: var(--White);
+        font-size: 1.5em;    
+        margin-left: 5em;
+    }
+
+    .btn{
+       display:flex;
+       justify-content:center;
+       align-items: center;
+       padding: 20px;
+       border-radius: 20px;
+       background-color: var(--White);
+       font-weight: 600;
+       color: black;
+    }
+
+    .pst-abs{
+        
+    }
+
+    .title{
+        letter-spacing: 0.5em;
+        font-size: 4.5em;
+    }
+
+    .arrow{
+        width: 1%;  
+    }
+
+    h2{
+        font-weight: 900;
+        font-size: 3.5em;
+        line-height: 1;
+    }
+    
+    p{
+        font-size: 1.5em;
+        color: var(--Very-dark-grayish-blue);
+        font-weight: 700;}
 
     
+    h3{
+        font-size: 2em;
+    }
+    .one{
+        display:flex;
+        flex-direction: row-reverse;
+    }
+    .img-trans{
+        width: 50%;
+    }
     
+    .transform,
+    .stand-out{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin:0;
+        padding:0;
+        width: 50%;
+    }
+
+    .content{
+        width:70%;
+        text-align: left;
+    }
+
+    .cont{
+        width: 50%;
+    }
+
+    .sec{
+        display: flex;
+    }
+
+    .two,
+    .three{
+        display:flex;
+    }
+
+
+    .three,
+    .four{
+        /* width: 50%; */
+    }
+    .graphics,
+    .photography{
+        
+    }
+
+    .aside{
+        margin: 100px auto;
+    }
+
+    .testimonials{
+        display:flex;
+        width: 70%;
+        margin: 0 auto;
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+    .flex{
+        display:flex;
+       
+        
+     }
     
-    
+     .item{
+        width: 25%;
+     }
+
+     .footer-container{
+        padding: 200px 0;
+        margin: 0 auto;
+    }
+
+     .fot{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+     }
+
+     .nav{
+        width: 25%;
+        margin: 50px 0;
+     }
+
+     .socials{
+        display:flex;
+        width: 12.5%
+        
+    }
     
 }
