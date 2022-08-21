@@ -214,6 +214,9 @@ p{
     font-weight: 700;
 }
 
+.client.h3{
+    padding: 50px;
+}
 
 h4{
     color: var(--Grayish-blue);
