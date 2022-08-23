@@ -127,7 +127,7 @@ a.nav-links {
     color: var(--Dark-desaturated-cyan);
     font-size: 1em; 
     padding: 0;   
-    font-size: 2em;
+    font-size: 1em;
 }
 .nav-toggle {
     cursor: pointer;
@@ -144,7 +144,7 @@ a.nav-links {
     border-radius: 50px;
     background-color: var(--Yellow);
     font-weight: 600;
-    font-size: 2em;
+    font-size: 1em;
     width: 50%;
     text-align: center;
 }
