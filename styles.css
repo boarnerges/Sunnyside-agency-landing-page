@@ -386,6 +386,11 @@ a.nav-links{
     font-size: 1.5em;
 }
 
+a.nav-links:focus,
+a.nav-links:hover{
+    opacity: 0.5;
+}
+
 .hdup{
     display: flex;
     align-items: baseline;
