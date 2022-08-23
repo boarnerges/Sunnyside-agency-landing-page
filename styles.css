@@ -190,7 +190,7 @@ img.arrow{
 
 h2{
     font-weight: 900;
-    font-size: 3.3em;
+    font-size: 2em;
     line-height: 1;
 }
 
@@ -215,7 +215,6 @@ p{
 
 .content > p{
     line-height: 2;
-    font-size: 1em;
 }
 
 .three,
@@ -245,10 +244,6 @@ p{
     width: 90%;
     text-align: center;
     margin: 0 auto;
- }
-
- .cont > p{
-    font-size: 1em;
  }
 
 h3.client{
