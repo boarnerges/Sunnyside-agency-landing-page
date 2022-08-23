@@ -398,8 +398,8 @@ h1.title {
     font-weight: 900;
 }
 
-.pst-abs{ 
-   margin: 0;
+div.pst-abs{ 
+   margin-top: 0px;
 }
 
 a.btn{
