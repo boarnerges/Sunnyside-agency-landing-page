@@ -65,21 +65,76 @@ select {
     --Dark-blue: hsl(198, 62%, 26%);              /*(photography text) */
     --Dark-moderate-cyan: hsl(168, 34%, 41%);      /*footer*/
 
-/* Neutral */
 
     --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
     --Very-dark-grayish-blue: hsl(213, 9%, 39%);
     --Dark-grayish-blue: hsl(232, 10%, 55%);
     --Grayish-blue: hsl(210, 4%, 67%);
     --White: hsl(0, 0%, 100%);
+
+
+    --fs-small: 0.8rem;
+    --fs-medium: 1.2rem;
+    --fs-large: 1.5rem;  
+    --fs-very-large: 2rem;
+    
+    
+    --fw-regular: 600;
+    --fw-semi-bold: 700;
+    --fw-bold: 900;
+}
+
+    @media (min-width: 900px){
+        :root{
+            --fs-small: 1rem;
+            --fs-medium: 1.5rem;
+            --fs-large: 2rem;  
+            --fs-very-large: 2.5rem;
+            
+            
+            --fw-regular: 600;
+            --fw-semi-bold: 700;
+            --fw-bold: 900;
+        }
+    }
+
+    @media (min-width: 1440px){
+        :root{
+            --fs-small: 1.2rem;
+            --fs-medium: 2rem;
+            --fs-large: 2.5rem;  
+            --fs-very-large: 3rem;
+            
+            
+            --fw-regular: 600;
+            --fw-semi-bold: 700;
+            --fw-bold: 900;
+        }
+
+    }
+
+
+/*----------------------Utility Classes -------------------------*/
+.fw-bold{ font-weight: var(--fw-bold) }
+.fw-regular{ font-weight: var(--fw-regular) }
+.fw-semi-bold{ font-weight: var(--fw-semi-bold) }
+
+
+.fs-primary-heading { font-size: var(--fs-very-large) }
+.fs-secondary-heading { font-size: var(--fs-large) }
+.fs-regular {font-size: var(--fs-medium)}
+.fs-paragragh { font-size: var(--fs-small) }
+
+.center-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;     
 }
 
 
 /**********************      Style       *************************/
  body {
     min-width: 375px;
-    margin: 0 auto;
-    /* width: 100%; */
    
  }
 
@@ -88,7 +143,7 @@ select {
 
 header {
     background-image: url("./images/mobile/image-header.jpg");
-    height: 100vh;
+    min-height: 100vh;
     background-size: 100% 100%;
     background-position: center center; 
 }
@@ -99,7 +154,6 @@ header {
     justify-content: space-between; 
     width: 90%;
     margin: 0 auto;
-
 }
 
 .logo::focus,
@@ -125,10 +179,10 @@ a.nav-links {
     text-decoration: none;
     line-height: 4;
     color: var(--Dark-desaturated-cyan);
-    font-size: 1em; 
+    font-size: var(--fs-small); 
     padding: 0;   
-    font-size: 1em;
 }
+
 .nav-toggle {
     cursor: pointer;
 }
@@ -143,22 +197,15 @@ a.nav-links {
     padding: 30px;
     border-radius: 50px;
     background-color: var(--Yellow);
-    font-weight: 600;
-    font-size: 1em;
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-small);
     width: 50%;
     text-align: center;
 }
 
-div.click{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 div.pst-abs{
-    display:flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 5em;
     margin-top: 90px;
 } 
@@ -166,7 +213,6 @@ div.pst-abs{
 h1.title { 
     color: #ffff;
     text-align: center;
-    font-size: 2.5em;
     line-height: 1;
     letter-spacing: 10px;   
 }
@@ -188,24 +234,18 @@ img.arrow{
 
 /**********************      Body       *************************/
 
-h2{
-    font-weight: 900;
-    font-size: 2em;
-    line-height: 1;
-}
-
-p{
-    font-size: 18px;
-    color: var(--Very-dark-grayish-blue);
-    font-weight: 700;
-}
-
 .transform,
 .stand-out
  {
-     width: 100%;
      margin: 100px 0;
      text-align: center
+ }
+
+ .cont{
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
  }
 
  .content{
@@ -236,15 +276,7 @@ p{
   color: var(--Dark-desaturated-cyan);
  }
 
- .cont{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    text-align: center;
-    margin: 0 auto;
- }
+
 
 h3.client{
     padding-top: 50px;
@@ -253,6 +285,7 @@ h3.client{
 h4{
     color: var(--Grayish-blue);
 }
+
 .contaniner {
     width: 90%;
     margin: 0 auto;
@@ -263,20 +296,16 @@ h4{
   
 .client{
     letter-spacing: 6px;
-    font-weight: 900;
     text-align: center;
     color: var(--Grayish-blue );
 
-}
-
-.client_name{
-    font-weight: 900;
 }
 
  .client_img{
     margin: 0 auto;
     border-radius: 50px;
  }
+
  .testimonials p {
     line-height: 50px;
  
@@ -309,42 +338,41 @@ h4{
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    padding-left: 10px;
-    margin: 50px 0;
+    padding:0;
+    width: 100%;
  
 }
     
 .nav-link{
     text-decoration: none;
-    font-size: 1em;
+    font-size: var(--fs-small);
 }
 
 .socials{
     display:flex;
     justify-content: space-around;
     margin: 50px auto;
-    width: 50%
-    
+    width: 50%;
 }
 
+.fot{
+    flex-direction: column;
+ }
+
 .attribution a {
-    font-size: 1em;
+    font-size: var(--fs-small);
 }
 
 /**********************      Desktop view       *************************/
 
-@media (min-width: 533px){
+@media (min-width: 900px){
 
-    body{
-        min-width: 1440px;
-    }
 /*----------------Header----------------*/
 
 header{
     background-image: url("./images/desktop/image-header.jpg");
-    height: 100vh;
-    /* position: relative; */
-    color: white;
+    min-height: 100vh;
+    color: var(--white);
     width: 100%;
 }
 
@@ -387,7 +415,6 @@ a.nav-links{
     text-decoration: none;
     color: white;
     margin-left: 5em;
-    font-size: 1.5em;
 }
 
 a.nav-links:focus,
@@ -402,9 +429,7 @@ a.nav-links:hover{
 }
 
 h1.title {
-    font-size: 4.5em;
     letter-spacing: 0.3em;
-    font-weight: 900;
 }
 
 div.pst-abs{ 
@@ -416,9 +441,9 @@ a.btn{
     text-decoration: none;   
     padding: 20px;
     border-radius: 50px;
-    background-color: white;
+    background-color: var(--White);
     color: black;
-    font-weight: 600;
+    font-weight: var(--fw-regular);
     margin: 20px;
     margin-left: 50px;
     width: 100%;
@@ -433,22 +458,7 @@ a.btn:hover{
 img.arrow{
     width: 2.5%;  
 }
-    h2{
-        font-weight: 900;
-        font-size: 3.5em;
-        line-height: 1;
-    }
-    
-    p{
-        font-size: 1.5em;
-        color: var(--Very-dark-grayish-blue);
-        font-weight: 700;
-    }
 
-    
-    h3{
-        font-size: 2em;
-    }
     .one{
         display:flex;
         flex-direction: row-reverse;
@@ -461,10 +471,7 @@ img.arrow{
     
     .transform,
     .stand-out{
-        display:flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         margin:0;
         padding:0;
         width: 50%;
@@ -476,7 +483,7 @@ img.arrow{
     }
 
     .content p{
-        font-size: 1.5em;
+        font-size: var(--fs-small);
     }   
 
     .two{
@@ -497,7 +504,7 @@ img.arrow{
     .three,
     .four{
         width: 100%;
-        height: 90vh;
+        height: 70vh;
         position: static;
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -510,10 +517,11 @@ img.arrow{
     }
     .cont{
         width: 60%;
+        padding-bottom: 10px;
     }
 
     .cont p{
-        font-size: 1.5em;
+        font-size: var(--fs-small);
     }
     .aside{
         margin: 100px auto;
@@ -528,11 +536,11 @@ img.arrow{
     }
 
     .contaniner {
-        width: 25%;
+        width: 30%;
     }
 
     .contaniner p {
-        font-size: 2em;
+        font-size: var(--fs-small);
     }
 
     .flex{
@@ -548,10 +556,7 @@ img.arrow{
     }
 
      .fot{
-        display:flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
      }
 
      .nav{
@@ -561,13 +566,19 @@ img.arrow{
 
      .socials{
         display:flex;
-        width: 12.5%
-        
+        width: 12.5%;
     }
 
     img.logo :focus,
     img.logo :hover {
-     color: white;
+    color: white;
 }
+    
+}
+@media (min-width: 900px){
+    .three,
+    .four{
+        width: 100%;
+        height: 90vh;
     
 }
