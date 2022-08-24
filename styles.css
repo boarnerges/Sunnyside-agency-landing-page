@@ -72,6 +72,66 @@ select {
     --Dark-grayish-blue: hsl(232, 10%, 55%);
     --Grayish-blue: hsl(210, 4%, 67%);
     --White: hsl(0, 0%, 100%);
+<<<<<<< Updated upstream
+=======
+
+
+    --fs-small: 0.8rem;
+    --fs-medium: 1.2rem;
+    --fs-large: 1.5rem;  
+    --fs-very-large: 2rem;
+    
+    --fw-regular: 600;
+    --fw-semi-bold: 700;
+    --fw-bold: 900;
+}
+
+    @media (min-width: 900px){
+        :root{
+            --fs-small: 1rem;
+            --fs-medium: 1.5rem;
+            --fs-large: 2rem;  
+            --fs-very-large: 2.5rem;
+            
+            
+            --fw-regular: 600;
+            --fw-semi-bold: 700;
+            --fw-bold: 900;
+        }
+    }
+
+    @media (min-width: 1440px){
+        :root{
+            --fs-small: 1.2rem;
+            --fs-medium: 2rem;
+            --fs-large: 2.5rem;  
+            --fs-very-large: 3rem;
+            
+            
+            --fw-regular: 600;
+            --fw-semi-bold: 700;
+            --fw-bold: 900;
+        }
+
+    }
+
+
+/*----------------------Utility Classes -------------------------*/
+.fw-bold{ font-weight: var(--fw-bold) }
+.fw-regular{ font-weight: var(--fw-regular) }
+.fw-semi-bold{ font-weight: var(--fw-semi-bold) }
+
+
+.fs-primary-heading { font-size: var(--fs-very-large) }
+.fs-secondary-heading { font-size: var(--fs-large) }
+.fs-regular {font-size: var(--fs-medium)}
+.fs-paragragh { font-size: var(--fs-small) }
+
+.center-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+>>>>>>> Stashed changes
 }
 
 
