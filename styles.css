@@ -114,6 +114,17 @@ select {
     }
 
 
+
+
+
+
+
+
+
+
+
+    
+
 /*----------------------Utility Classes -------------------------*/
 .fw-bold{ font-weight: var(--fw-bold) }
 .fw-regular{ font-weight: var(--fw-regular) }
@@ -130,6 +141,18 @@ select {
     justify-content: center;
     align-items: center;     
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /**********************      Style       *************************/
