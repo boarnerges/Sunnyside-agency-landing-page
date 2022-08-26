@@ -20,10 +20,10 @@
         <div class="hdup">
           <div class="top-header">
             <a href="#" class="logo"><img src="./images/logo.svg" alt="Sunnyside-logo"></a>
-            <a href="#" class="nav-toggle"><img src="./images/icon-hamburger.svg" alt="hamburger"></a>
+            <a aria-controls = "primary-navigation" href="#" class="nav-toggle"><img src="./images/icon-hamburger.svg" alt="hamburger"></a>
           </div>
 
-          <nav class="navbar">   
+          <nav class="navbar" id = "primary-navigation">   
               <ul class="main-nav">
                     <li><a href="#" class="nav-links">About</a></li>
                     <li><a href="#" class="nav-links">Services</a></li>
@@ -132,18 +132,20 @@
           <div class="footer-container">
             <div class="fot | center-div ">
               <a href="#"><img class="footer_logo" src="./images/logo.svg" alt="Sunnyside logo"></a>
-
-              <ul class="nav ">
-                <li><a href="#" class="nav-link">About</a></li>
-                <li><a href="#" class="nav-link">Services</a></li>
-                <li><a href="#" class="nav-link">Projects</a></li>
-              </ul>
+             
+              <nav>
+                <ul aria-label="Footer" role="list" class="nav ">
+                  <li><a href="#" class="nav-link">About</a></li>
+                  <li><a href="#" class="nav-link">Services</a></li>
+                  <li><a href="#" class="nav-link">Projects</a></li>
+                </ul>
+              </nav>
 
               <div class="socials ">
-                <a href="#" class="logo"><img src="./images/icon-facebook.svg" alt="facebook logo"></a>
-                <a href="#" class="logo"><img src="./images/icon-instagram.svg" alt="instagram logo"></a>
-                <a href="#" class="logo"><img src="./images/icon-twitter.svg" alt="icon logo"></a>
-                <a href="#" class="logo"><img src="./images/icon-pinterest.svg" alt="pinterest logo"></a>
+                <a aria-label="facebook" href="#" class="logo"><img src="./images/icon-instagram.svg" alt="instagram logo"></a>
+                <a aria-label="instagram href="#" class="logo"><img src="./images/icon-twitter.svg" alt="icon logo"></a>
+                <a aria-label="twitter" href="#" class="logo"><img src="./images/icon-facebook.svg" alt="facebook logo"></a>
+                <a aria-label="pinterest" href="#" class="logo"><img src="./images/icon-pinterest.svg" alt="pinterest logo"></a>
               </div>
           </div>
           </div>
