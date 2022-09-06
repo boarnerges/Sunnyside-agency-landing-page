@@ -426,6 +426,7 @@ nav.navbar{
     align-items: baseline;
     justify-content: flex-end;
     background: transparent;
+  
 }
 
 ul.main-nav{
@@ -447,8 +448,9 @@ a.nav-links:hover{
 
 .hdup{
     display: flex;
-    align-items: baseline;
-    padding: 25px 50px;
+    align-items: center;
+    padding: 0px;
+    height: 10vh;
 }
 
 h1.title {
