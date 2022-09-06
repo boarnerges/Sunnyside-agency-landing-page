@@ -361,15 +361,16 @@ h4{
 .nav{
     display: flex;
     justify-content: space-around;
+    align-content: center;
     list-style-type: none;
-    padding:0;
+    padding :0;
     width: 100%;
- 
 }
     
 .nav-link{
     text-decoration: none;
     font-size: var(--fs-small);
+    padding: 10px;
 }
 
 .socials{
@@ -389,7 +390,7 @@ h4{
 
 /**********************      Desktop view       *************************/
 
-@media (min-width: 900px){
+@media (min-width: 768px){
 
 /*----------------Header----------------*/
 
@@ -583,9 +584,10 @@ img.arrow{
         flex-direction: column;
      }
 
-     .nav{
-        width: 25%;
+    .nav{
+        width: 50%;
         margin: 50px 0;
+        justify-content: flex-start
      }
 
      .socials{
@@ -599,10 +601,11 @@ img.arrow{
 }
     
 }
-@media (min-width: 900px){
+@media (min-width: 1024px){
     .three,
     .four{
         width: 100%;
         height: 90vh;
     
+}
 }
